@@ -5,13 +5,13 @@ import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import About from "./components/About";
 import Clubs from "./components/Clubs.jsx";
-import Blog from "./components/Blog";
-import Contact from "./components/Contact";
+// import Blog from "./components/Blog";
+// import Contact from "./components/Contact";
 import { useState } from "react";
 
-const style = {
-  wrapper: ``,
-};
+// const style = {
+//   wrapper: ``,
+// };
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -24,7 +24,7 @@ function App() {
   });
 
   return (
-    <div className="App w-full scroll-smooth">
+    <div className="App w-full scroll-smooth font-NotoSerifKhojki">
       {loading ? (
         <Loading />
       ) : (
@@ -32,7 +32,7 @@ function App() {
           <Navbar />
           <HeroSection />
           <About />
-          {/* <Clubs /> */}
+          <Clubs />
         </>
       )}
       {/* <Routes>

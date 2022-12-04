@@ -1,6 +1,13 @@
-import { Suspense, useEffect } from "react";
-import { useState } from "react";
-import About from "./About";
+// import { Suspense, useEffect } from "react";
+// import { useState } from "react";
+// import About from "./About";
+
+const style = {
+  heroSection: `relative top-20 bg-black bg-hero-bg-8 bg-cover bg-no-repeat bg-center font-Merriweather w-full h-screen`,
+  heroContainer: `absolute w-full top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-white text-center font-semibold flex flex-col justify-center gap-6 items-center text-center z-10 h-screen text-base md:text-lg bg-black/50 backdrop-brightness-50 backdrop-blur-[3px]`,
+  heroButton: `px-4 py-2 bg-yellow-500/90 border-0 transition-colors rounded-lg text-white hover:bg-yellow-500/60`,
+  heroBigText: `font-bold max-w-2xl px-4 text-3xl md:text-4xl`
+}
 
 export default function HeroSection() {
   // const [currentPosition, setCurrentPosition] = useState(0);
@@ -84,18 +91,18 @@ export default function HeroSection() {
       //     <button onClick={handleNext} style={{backgroundColor: "blueviolet", padding:".8rem"}}>Next</button>
       //   </div>
       // </section> */}
-      <div className="relative top-16 bg-black bg-hero-bg-6 bg-cover bg-no-repeat bg-center w-full h-screen ">
+      <div className={style.heroSection}>
         {/* Hero section */}
-        <div className="absolute w-full top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col justify-center gap-6 items-center text-center z-10 h-screen text-base md:text-lg backdrop-brightness-50 backdrop-blur-[3px]">
-          <section>
-            <p className="text-white font-semibold">
+        <div className={style.heroContainer}>
+          <section className="flex flex-col justify-center gap-4">
+            <p className="">
               DON'T LOOK FURTHER
             </p>
-            <h1 className="font-bold text-white max-w-2xl px-4 text-3xl md:text-4xl">
+            <h1 className={style.heroBigText}>
               Welcome to the Future of Social Connection
             </h1>
           </section>
-          <a href="#about-us" className="px-4 py-2 bg-yellow-500/90 border-0 font-semibold transition-colors rounded-lg text-white hover:bg-yellow-500/60">
+          <a href="#about-us" className={style.heroButton}>
             GET STARTED
           </a>
         </div>

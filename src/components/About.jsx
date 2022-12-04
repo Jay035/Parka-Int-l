@@ -1,7 +1,14 @@
+
+const style = {
+  aboutUsContainer: `p-4 mt-20 flex flex-col gap-4 mt-8 mb-12`,
+  aboutUsTitle: `text-xl md:text-2xl text-center font-bold uppercase my-2`,
+  subTitles: `font-semibold text-lg`
+}
+
 export default function About() {
   return (
-    <section className="p-4 relative top-16 flex flex-col gap-4" id="about-us">
-      <h1 className="text-xl md:text-2xl text-center font-bold">About Us</h1>
+    <section className={style.aboutUsContainer} id="about-us">
+      <h1 className={style.aboutUsTitle}>About Us</h1>
       <div className="">
         <p>
           Parka International Ltd is a premium lifestyle management company with
@@ -12,8 +19,9 @@ export default function About() {
         </p>
       </div>
 
+      {/* Mission  */}
       <div className="">
-        <h3 className="font-semibold text-lg">Our Mission</h3>
+        <h3 className={style.subTitles}>Our Mission</h3>
         <p>
           Parka International as a premium lifestyle management company aims to
           improve the lifestyle of the members of it's clubs. We aim to create
@@ -22,8 +30,10 @@ export default function About() {
           another
         </p>
       </div>
+
+      {/* Vision */}
       <div className="">
-        <h3 className="font-semibold text-lg">Our Vision</h3>
+        <h3 className={style.subTitles}>Our Vision</h3>
         <p>
           We have the vision to advance social connectivity while inspiring true
           values which are friendship, love and unity in our communities.
