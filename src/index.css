@@ -1,22 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Noto+Serif+Khojki:wght@400;500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    /* .nav-menu{
-        animation: fadeIn 0.3s ease-out;
-    }
+.livvic-regular {
+  font-family: "Livvic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-    @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      } */
+.livvic-medium {
+  font-family: "Livvic", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.livvic-semibold {
+  font-family: "Livvic", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.livvic-bold {
+  font-family: "Livvic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
